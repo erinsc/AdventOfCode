@@ -1,0 +1,1 @@
+print(sum(any(all(3>=v>0 for v in a)+all(0>v>=-3 for v in a)for a in d)for d in[[[a - b for a,b in zip(l,l[1:])] for l in d] for d in [[l[:i] + l[i+1:] for i in range(len(l))] for l in [list(map(int,l.split())) for l in open('input2.txt').readlines()]]]))
